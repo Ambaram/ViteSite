@@ -1,0 +1,71 @@
+html{
+    font-family: Rockwell;
+}
+.flex-container-header,.flex-container-footer{
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.flex-container-header .logo > h1{
+    position: fixed;
+    left: 10%;
+    color: brown;
+    font-family: "Apple SD Gothic Neo";
+    display: block;
+}
+.flex-container-header{
+    height: 100px;
+}
+.nav{
+    position: fixed;
+    float: right;
+    right: 10%;
+}
+main{
+    text-align: center;
+}
+
+form{
+    width: 20%;
+    margin: 1em auto;
+    padding-bottom: 1em;
+}
+
+form div{
+    margin: 1em;
+    text-align: left;
+}
+ul{
+    margin-top: 0;
+}
+li{
+    list-style: none;
+}
+select{
+    width: 60%;
+}
+
+#customer input{
+    width: 70%;
+}
+#buy{
+    border-radius: 1em;
+    border:none;
+    background-color: burlywood;
+    padding:.25em 1.5em;
+    font: bold 1.25em "Bodoni 72";
+}
+.nav li{
+    padding: 1em;
+    font-size: 1.5em;
+    display: inline-block;
+}
+footer{
+    border-top: 1px solid black;
+    padding-top:1em;
+    text-align: center;
+}
+footer h1{
+    font-size: 1em;
+}
+
