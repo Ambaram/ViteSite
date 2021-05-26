@@ -1,7 +1,13 @@
 window.onload= execute;
 function execute(){
-    document.getElementById("submit").onclick= call;
+    document.getElementById("buy").onclick= call;
     function call() {
-        alert("Thanks for submitting your request!");
+        if (document.getElementById("name").value===""){
+            alert("Please fill in the name!!")
+        }
+        else{
+            alert("Request has been submitted!!");
+        }
+
     }
 }
