@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="/main.js"></script>
+  <title>ViteSite</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark" id="nav">
+      <a class="navbar-brand" href="https://frosty-jones-c122fa.netlify.app/">
+        <img src="./download.png" class="w-50 mt-0 mx-4" alt="logo">
+      </a>
+      <div class="navbar navbar-sm-collapse" id="fixnav">
+        <div class="navbar-nav d-flex flex-row" id="links">
+          <a class="nav-item nav-link active p-4 text-light" id="navbar-link" href="https://frosty-jones-c122fa.netlify.app/">Home <span
+              class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link">About</a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link">Works</a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="jumbotron">
+    <h1 class="h2 text-center">Security in Websites</h1>
+    <p>An online presence gives your business valuable visibility, but creating a secure website instills consumer confidence in shopping 
+      with your business. While launching a company website can generate brand awareness and more convenient interactions with customers, 
+      it’s imperative to prioritize security when building your site — otherwise, your website could repel customers.</p>
+    <div class="row mx-auto">
+      <h2 class="col-sm-12 text-center mt-4 p-4">Few Common Tips</h2>
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+            href="#list-home" role="tab" aria-controls="home">Avoid Injection Flaws</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+            href="#list-profile" role="tab" aria-controls="profile">Broken Authentication</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+            href="#list-messages" role="tab" aria-controls="messages">Broken Access Control</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+            href="#list-settings" role="tab" aria-controls="settings">Sensitive Data Exposure</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part 
+            of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing 
+            data without proper authorization.
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            Application functions related to authentication and session management are often implemented incorrectly, 
+            allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other 
+            users’ identities temporarily or permanently.
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to 
+            access unauthorized functionality and/or data, such as access other users’ accounts, view sensitive files, modify other users’ 
+            data, change access rights, etc.
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may 
+            steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be 
+            compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged 
+            with the browser.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <a class="float-right" href="https://owasp.org/www-project-top-ten/">Source : The Open Web Application Security Project aka OWASP</a>
+      </div>
+    </div>
+  </main>
+  <section class="container">
+    <h2 class="text-center mx-auto m-4">See More</h2>
+    <div class="row">
+      <a class="col-sm-4 border p-4 my-4 bg-primary rounded-circle text-light text-center" href="badexample.html">
+        <h3>An Insecure Website</h3>
+        <p>This is a page that has security issues. See what they are and why they are.</p>
+      </a>
+      <a class="col-sm-4 border p-4 my-4 bg-light rounded-circle text-center" href="/security.html">
+        <h3 >A Secure Website</h3>
+        <p>See how a secure webpage looks like</p>
+      </a>
+      <a class="col-sm-4 border p-4 my-4 bg-success rounded-circle text-light text-center" href="/accessibility.html">
+        <h3>An accessible page</h3>
+        <p>See how a webpage can be made more accessible</p>
+      </a>
+    </div>
+  </section>
+  <footer class="container-fluid bg-dark">
+    <div class="navbar navbar-sm-collapse" id="fixnav">
+      <div class="navbar-nav d-flex flex-row justify-content-center" id="links">
+        <a class="nav-item nav-link active p-4 text-light" id="navbar-link">Home <span
+            class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">About</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">Works</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">Contact</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
