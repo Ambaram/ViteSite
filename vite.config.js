@@ -12,7 +12,7 @@ module.exports = {
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        main: resolve(__dirname, 'ViteSite.html'),
         qa: resolve(__dirname, 'accessibility.html'),
         security: resolve(__dirname, 'security.html'),
         bad: resolve(__dirname, 'badexample.html')
