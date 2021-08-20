@@ -80,13 +80,13 @@
     </div>
   </main>
   <section class="container">
-    <form name="myform" action="/logout.php" method="POST">
-      <div class="form-group">
+    <form name="myform" action="/logout.php" class="row" method="POST">
+      <div class="form-group col-sm-4">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
       </div>
-      <div class="form-group">
+      <div class="form-group col-sm-4">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
         <h6>Password Policy</h6>
@@ -99,9 +99,8 @@
       <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
   </section>
-  <section class="Jumbotron">
-    <h2 id = "security" class="row">
-      <table>
+  <section class="container">
+      <table class="table table-striped">
         <thead>
           <tr>
             <th>Security Measures</th>
@@ -135,9 +134,12 @@
             <td>Clear password policy</td>
             <td>Avoid easy to guess data and providing more protection to sensitive data</td>
           </tr>
+          <tr>
+            <td>Security Report summary</td>
+            <td>All the pages associated with the website are A+ as per securityheader.com</td>
+          </tr>
         </tbody>
       </table>
-    </h2>
   </section>
   <footer class="container-fluid bg-dark">
     <div class="navbar navbar-sm-collapse" id="fixnav">
