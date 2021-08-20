@@ -80,27 +80,31 @@
     </div>
   </main>
   <section class="container">
-    <form name="myform" action="/logout.php" class="row" method="POST">
-      <div class="form-group col-sm-4">
-        <label for="exampleInputEmail1">Email address</label>
-        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+    <form name="myform" action="" class="row" method="POST">
+      <div class="container">
+        <div class="form-group col-sm-4">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group col-sm-4">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          <h6>Password Policy</h6>
+          <ul>
+            <li>One Uppercase letter</li>
+            <li>One Number</li>
+            <li> 8 characters long</li>
+          </ul>
+        </div>
       </div>
-      <div class="form-group col-sm-4">
-        <label for="exampleInputPassword1">Password</label>
-        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-        <h6>Password Policy</h6>
-        <ul>
-          <li>One Uppercase letter</li>
-          <li>One Number</li>
-          <li> 8 characters long</li>
-        </ul>
+      <div>
+        <button type="submit" id="submit" class="btn btn-primary">Submit</button>
       </div>
-      <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
   </section>
   <section class="container">
-      <table class="table table-striped">
+      <table class="table table-striped table-bordered">
         <thead>
           <tr>
             <th>Security Measures</th>
