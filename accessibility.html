@@ -34,7 +34,7 @@
     <p>Accessibility (often abbreviated to A11y—as in "a" then 11 characters then "y") in Web development means enabling as many people as 
       possible to use Web sites, even when those people's abilities are limited in some way. For many people, technology makes things easier.</p>
     <div class="row mx-auto">
-      <h2 class="col-sm-12 text-center mt-4 p-4">Key Points to make an accessible website</h2>
+      <h2 class="col-sm-12 text-center mt-4 p-4">Accessibility Measures taken in development of this website</h2>
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
@@ -42,52 +42,45 @@
           <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
             href="#list-profile" role="tab" aria-controls="profile">Alt Text for images</a>
           <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-            href="#list-messages" role="tab" aria-controls="messages">Use table for data not for layout</a>
+            href="#list-messages" role="tab" aria-controls="messages">Descriptive link names</a>
           <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-            href="#list-settings" role="tab" aria-controls="settings">Use ARIA roles</a>
+            href="#list-settings" role="tab" aria-controls="settings">Use of ARIA roles</a>
             <a class="list-group-item list-group-item-action" id="list-about-list" data-toggle="list"
-            href="#list-about" role="tab" aria-controls="about">Keyboard Navigation</a>
+            href="#list-about" role="tab" aria-controls="about">Easy and sequential Keyboard Navigation</a>
         </div>
       </div>
       <div class="col-8">
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            the dev build process that most of front-end developers use: the source code, which is not directly
-            understandable by browsers,
-            is compiled and bundled. The main reason for bundling is that browsers do not understand modules formats
-            used in the source code (cf B.),
-            so we have to concatenate everything into huge scripts. The pain point here is that, for any modification
-            done in the source code,
-            part or all of the application has to be rebuilt, which takes time.
+            <p>Screen reader users can use heading structure to navigate content. By using headings (h1, h2, etc.) correctly and strategically, 
+            the content of your website will be well-organized and easily interpreted by screen readers.</p>
+            <p><strong>Heading structures are intact for the page. It strictly follows the pattern h1->h2->h3</strong></p>
           </div>
           <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            Vite is a development server based on ES modules and a production server based on the bundler Rollup (which
-            itself relies on ES modules).
-            Even though Vite has built-in support for Vue apps (this point is being discussed here), Vite is
-            framework-agnostic and can support other
-            frameworks with plugins. It currently has working plugins for React, Preact and Svelte. Also, VitePress, a
-            static site generator based
-            on Vue and Vite ("VuePress's brother") is currently under development.
-            <!---
-              -->In dev mode, Vite supports HMR (Hot Module Replacement) for the frameworks previously mentionned.
+            <p>Alt text should be provided for images, so that screen reader users can understand the message conveyed by the use of 
+            images on the page. This is especially important for informative images (such as infographics). When creating the alt text, 
+            the text should contain the message you wish to convey through that image, and if the image includes text, that text should 
+            also be included in the alt.</p>
+            <p><strong>The page contain a logical alt text for every image</strong></p>
           </div>
           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-            Using tables for page layout adds additional verbosity to screen reader users. Whenever a screen reader encounters a table, 
-            the user is informed that there is a table with "x" number of columns and rows, which distracts from the content. Also, 
-            the content may be read in an order that does not match the visual order of the page. Do not create the layout of a website 
-            using a table; instead, use CSS for presentation.When a data table is necessary (i.e. you have a set of data that is best 
-            interpreted in a table format, such as a bank statement), use headers for rows and columns, which helps explain the 
-            relationships of cells. Complex tables may have several cells within the table that have a unique relationship to each other, 
-            and these should be identified by using the "scope" attribute in HTML. Table captions (HTML5) can be used to give additional 
-            information to users about how best to read and understand the table relationships.
+            <p>When including links in your content, use text that properly describes where the link will go. Using "click here" is not 
+            considered descriptive, and is ineffective for a screen reader user.Just like sighted users scan the page for linked text, 
+            visually-impaired users can use their screen readers to scan for links. As a result, screen reader users often do not read the 
+            link within the context of the rest of the page. Using descriptive text properly explains the context of links to the screen 
+            reader user.The most unique content of the link should be presented first, as screen reader users will often navigate the 
+            links list by searching via the first letter.</p>
+            <p><strong>Descriptive name given to every link present on the page</strong></p>
+            
           </div>
           <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-            ARIA (Accessible Rich Internet Applications) is a complex, powerful technical specification for adding accessibility information 
+            <p>ARIA (Accessible Rich Internet Applications) is a complex, powerful technical specification for adding accessibility information 
             to elements that are not natively accessible. You should always use native HTML elements when they are available. Remember, the 
-            first rule of ARIA is “Don’t use ARIA.” Many functions that used to require ARIA attributes are now implemented in HTML5.
+            first rule of ARIA is “Don’t use ARIA.” Many functions that used to require ARIA attributes are now implemented in HTML5.</p>
+            <p><strong>ARIA roles given to all the relevant tags</strong></p>
           </div>
           <div class="tab-pane fade" id="list-about" role="tabpanel" aria-labelledby="list-about-list">
-              Users with mobility disabilities, including repetitive stress injuries, may not be able to use a mouse or trackpad. 
+              <p>Users with mobility disabilities, including repetitive stress injuries, may not be able to use a mouse or trackpad. 
               These people are able to access content through the use of a keyboard by pressing the "tab" or "arrow" keys, or through the 
               use of alternative input devices such as single-switch input or mouth stick. As a result, the tab order should match the 
               visual order, so keyboard-only users are able to logically navigate through site content.Long pages with lots of content 
@@ -96,7 +89,8 @@
               keyboard-only users won't have to tab through the page navigation in order to get the main content.For pages with local menus 
               and multiple levels and sub-items, the menus should be configured so that all menu items can be accessed with the keyboard. 
               Do not use elements that only activate when a user hovers over items with a mouse, as keyboard-only or screen readers users 
-              will not be able to activate them.
+              will not be able to activate them.</p>
+              <p><strong>Easy and sequential keyboard navigation of the whole website</strong></p>
             </div>
           </div>
         </div>

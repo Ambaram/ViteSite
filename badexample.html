@@ -48,16 +48,36 @@
       <div class="col-8">
         <div class="tab-content" id="nav-tabContent">
           <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            Form uses get method and hence the injection is possible.
+            <p>If a form is using get method the form data will be exposed to unintended user at the data will be appended to URL while 
+              using a GET request.</p>
+              <p>However using a POST request will avoid such scenario as the POST method does not append the data to the URL.
+                So if a page is using a form and it is using get method to transmit the data, there is a great possibility that the data 
+                can be exploited by unintended users.
+              </p>
+              <p><strong>Form uses get method and hence the injection is possible.</strong></p>
           </div>
           <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            Form does not encrypt the values provided by user.
+            <p>There is no form-validation present on the webpage, users can store any value in the database and it will be executed and 
+              unintended may get transferred to others.</p>
+            <p>Also if the page is logging in there must be a logout page in order to destroy the session and session data. Keeping session 
+              data active for very long time may get users into trouble as malicious codes running out in the web are continuously searching 
+              for such scenarios.
+            </p>
           </div>
           <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-            Form does not submit.No login/logout functionality provided.
+            <p>
+              
+            </p>
+            <p><strong>Form does not submit. No login/logout functionality provided.</strong></p>
           </div>
           <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-            No encryption methods used for user data and left prone to attack.
+            <p>
+              Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. 
+              Attackers may steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. 
+              Sensitive data may be compromised without extra protection, such as encryption at rest or in transit, and requires special 
+              precautions when exchanged with the browser.
+            </p>
+          <p><strong> No encryption methods used for user data and left prone to attack.</strong></p>
           </div>
         </div>
       </div>
