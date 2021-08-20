@@ -4,9 +4,21 @@ document.getElementById("heading").innerHTML =
 `Vite and Web Dev
 `
 
-document.getElementById("submit").onclick = alertpop;
+document.getElementById("submit").onclick = validateForm;
 
-function alertpop(){
-    const pass = document.getElementById("exampleInputPassword1").innerHTML;
-    window.alert("Your data is safe with us.");
-}
+function validateForm() {
+    let pattern  = "\w{8}"
+    let x = document.forms["myForm"]["fname"].value;
+    if (x == "") {
+      alert("Name must be filled out");
+      return false;
+    }
+    let y = document.forms["myForm"]["pass"].value;
+    let results = y.match(patter);
+    if(results == true){
+        alert("Thanks for submission");
+    }
+    else{
+        alert("please provide correct value");
+    }
+  }

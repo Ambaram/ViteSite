@@ -80,7 +80,7 @@
     </div>
   </main>
   <section class="container">
-    <form action="" method="POST">
+    <form name="myform" action="/logout.php" method="POST">
       <div class="form-group">
         <label for="exampleInputEmail1">Email address</label>
         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
@@ -89,9 +89,55 @@
       <div class="form-group">
         <label for="exampleInputPassword1">Password</label>
         <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+        <h6>Password Policy</h6>
+        <ul>
+          <li>One Uppercase letter</li>
+          <li>One Number</li>
+          <li> 8 characters long</li>
+        </ul>
       </div>
       <button type="submit" id="submit" class="btn btn-primary">Submit</button>
     </form>
+  </section>
+  <section class="Jumbotron">
+    <h2 id = "security" class="row">
+      <table>
+        <thead>
+          <tr>
+            <th>Security Measures</th>
+            <th>Purpose</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ul>
+                <h6>HTTP Headers</h6>
+                <li>X-Frame-Options = "DENY"</li>
+                <li>X-XSS-Protection = "1; mode=block"</li>
+                <li>Content-Security-Policy = "script-src 'self'"</li>
+                <li>X-Content-Type-Options = "nosniff"</li>
+                <li>Referrer-Policy = "no-referrer"</li>
+                <li>Permissions-Policy =  "geolocation=*"</li>
+              </ul>
+            </td>
+            <td>The headers set will allow only secure and intended user to be able to acces the page and the data present in it.</td>
+          </tr>
+          <tr>
+            <td>Use of POST Method for form data</td>
+            <td>Avoid Injection</td>
+          </tr>
+          <tr>
+            <td>Deployed via build tool(vite)</td>
+            <td>Auto protection via HTTPS</td>
+          </tr>
+          <tr>
+            <td>Clear password policy</td>
+            <td>Avoid easy to guess data and providing more protection to sensitive data</td>
+          </tr>
+        </tbody>
+      </table>
+    </h2>
   </section>
   <footer class="container-fluid bg-dark">
     <div class="navbar navbar-sm-collapse" id="fixnav">
