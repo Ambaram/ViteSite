@@ -106,25 +106,41 @@
   <section class="container mx-auto my-4 p-4">
       <table class="table table-striped table-bordered">
         <thead>
-          <tr class="text-center">
-            <th>Security Measures</th>
+          <tr class="text-center bg-dark text-light">
+            <th>HTTP Headers</th>
             <th>Purpose</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>
-              <ul>
-                <h6>HTTP Headers</h6>
-                <li>X-Frame-Options = "DENY"</li>
-                <li>X-XSS-Protection = "1; mode=block"</li>
-                <li>Content-Security-Policy = "script-src 'self'"</li>
-                <li>X-Content-Type-Options = "nosniff"</li>
-                <li>Referrer-Policy = "no-referrer"</li>
-                <li>Permissions-Policy =  "geolocation=*"</li>
-              </ul>
-            </td>
-            <td>The headers set will allow only secure and intended user to be able to acces the page and the data present in it.</td>
+            <td>HTTP Header X-Frame-Options = "DENY"</td>
+            <td>Tells the browser whether you want to allow your site to be framed or not.This page does not allow frames.</td>
+          </tr>
+          <tr>
+            <td>X-XSS-Protection = "1; mode=block"</td>
+            <td>Sets the configuration for the XSS Auditor built into older browsers. No  XSS for this page.</td>
+          </tr>
+          <tr>
+            <td>Content-Security-Policy = "script-src 'self'"</td>
+            <td>By whitelisting sources of approved content, you can prevent the browser from loading malicious assets. 
+              Assets set on thtis page are approved.</td>
+          </tr>
+          <tr>
+            <td>X-Content-Type-Options = "nosniff"</td>
+            <td>Stops a browser from trying to MIME-sniff the content type and forces it to stick with the declared content-type. Logo is clearly defined to be MIME.</td>
+          </tr>
+          <tr>
+            <td>Referrer-Policy = "no-referrer"</td>
+            <td>Header that allows a site to control how much information the browser includes with navigations away from a document and 
+              should be set by all sites.</td>
+          </tr>
+          <tr>
+            <td>Permissions-Policy =  "geolocation=*"</td>
+            <td>A header that allows a site to control which features and APIs can be used in the browser.</td>
+          </tr>
+          <tr class="bg-dark text-light text-center">
+          <th>Other Security Principles</th>
+          <th>Description</th>
           </tr>
           <tr>
             <td>Use of POST Method for form data</td>
