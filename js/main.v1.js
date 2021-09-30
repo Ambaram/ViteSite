@@ -1,4 +1,4 @@
-import './style.v1.scss'
+import '../scss/style.v1.scss'
 
 document.getElementById("submit").onclick = validateForm;
 
