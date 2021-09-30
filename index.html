@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <title>S&A</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark" id="nav">
+      <a class="navbar-brand" href="https://amvitesite.netlify.app/">
+        <img src="../images/S&A.jpeg" class="w-25 mt-0 mx-4 rounded-circle" alt="logo">
+      </a>
+      <div class="navbar navbar-sm-collapse" id="fixnav">
+        <div class="navbar-nav d-flex flex-row" id="links">
+          <a class="nav-item nav-link active p-4 text-light" id="navbar-link" href="https://amvitesite.netlify.app/">Home <span
+              class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link">About</a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link">Security</a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link">Accessibility</a>
+          <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="#buildtools">Build Tools</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="jumbotron" id="buildtool">
+    <div id="intro" class="container">
+      <h1 class="h2 text-center" id="heading">Build With Vite</h1>
+    <p id="text">
+      This Website is built using Vite.Vite is the brand new development and build server proposed by Evan You, which
+      is fast.
+      Vite (French word for "quick", pronounced /vit/, like "veet") is a build tool that aims to provide a faster and leaner development 
+      experience for modern web projects. It consists of two major parts:
+      <ul>
+        <li>A dev server that provides rich feature enhancements over native ES modules, for example extremely fast Hot Module Replacement
+        (HMR).
+        </li>
+        <li>
+          A build command that bundles your code with Rollup, pre-configured to output highly optimized static assets for production.
+        </li>
+      </ul>
+      Vite is opinionated and comes with sensible defaults out of the box, but is also highly extensible via its Plugin API and JavaScript API with full typing support.
+    </p>
+    <a href="https://vitejs.dev/guide/#overview">Source: Vite official page(see here)</a>
+    </div>
+    <div class="row mx-auto">
+      <h2 class="col-sm-12 text-center mt-4 p-4">Advantages of Vite</h2>
+      <div class="col-4">
+        <div class="list-group" id="list-tab" role="tablist">
+          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
+            href="#list-home" role="tab" aria-controls="home">Bundled Development</a>
+          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
+            href="#list-profile" role="tab" aria-controls="profile">Generalities</a>
+          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
+            href="#list-messages" role="tab" aria-controls="messages">SASS Support in Vite</a>
+          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
+            href="#list-settings" role="tab" aria-controls="settings">Dependency Management</a>
+        </div>
+      </div>
+      <div class="col-8">
+        <div class="tab-content" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+            the dev build process that most of front-end developers use: the source code, which is not directly
+            understandable by browsers,
+            is compiled and bundled. The main reason for bundling is that browsers do not understand modules formats
+            used in the source code (cf B.),
+            so we have to concatenate everything into huge scripts. The pain point here is that, for any modification
+            done in the source code,
+            part or all of the application has to be rebuilt, which takes time.
+          </div>
+          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+            Vite is a development server based on ES modules and a production server based on the bundler Rollup (which
+            itself relies on ES modules).
+            Even though Vite has built-in support for Vue apps (this point is being discussed here), Vite is
+            framework-agnostic and can support other
+            frameworks with plugins. It currently has working plugins for React, Preact and Svelte. Also, VitePress, a
+            static site generator based
+            on Vue and Vite ("VuePress's brother") is currently under development.
+            <!---
+              -->In dev mode, Vite supports HMR (Hot Module Replacement) for the frameworks previously mentionned.
+          </div>
+          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+            Wonderfully, we don't have to mess around with any plugins to get Vite to support SASS.
+            There's just two steps:
+            <li>npm install --save-dev sass</li>
+            <li> in any CSS files where you want to write SASS, change the file extension from `.css` to `.scss`
+              (and update any references in your HTML or JS files).</li>
+          </div>
+          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+            This is an important point: excepted for dev dependencies, Vite looks for an ES distribution, or, when it is
+            not available,
+            prebundles the dependency into ESM.
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <a class="float-right" href="https://indepth.dev/posts/1318/a-note-on-vite-a-very-fast-dev-build-tool">Source: The
+          Vite Advantage by Elise Patrikainen</a>
+      </div>
+    </div>
+  </main>
+  <section class="container" id="seemore">
+    <h2 class="text-center mx-auto m-4">See More</h2>
+    <div class="row">
+      <a class="col-sm-4 border p-4 my-4 bg-primary rounded-circle text-light text-center" href="../html/badexample.html">
+        <h3>An Insecure Website</h3>
+        <p>This is a page that has security issues. See what they are and why they are.</p>
+      </a>
+      <a class="col-sm-4 border p-4 my-4 bg-light rounded-circle text-center" href="../html/security.html">
+        <h3 >A Secure Website</h3>
+        <p>See how a secure webpage looks like</p>
+      </a>
+      <a class="col-sm-4 border p-4 my-4 bg-success rounded-circle text-light text-center" href="../html/accessibility.html">
+        <h3>An accessible page</h3>
+        <p>See how a webpage can be made more accessible</p>
+      </a>
+    </div>
+  </section>
+  <footer class="container-fluid bg-dark">
+    <div class="navbar navbar-sm-collapse justify-content-center" id="fixnav">
+      <div class="navbar-nav d-flex flex-row " id="links">
+        <a class="nav-item nav-link active p-4 text-light" id="navbar-link" href="#buildtool">Home <span
+            class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="../html/accessibility.html">Accessible Websites</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="../html/security.html">Secure Websites</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="../html/index.html">Build Tools</a>
+      </div>
+    </div>
+  </footer>
+  <script type="module" src="/main.v1.js"></script>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</html>
