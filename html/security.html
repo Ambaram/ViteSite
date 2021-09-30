@@ -6,10 +6,6 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="module" src="/main.v1.js"></script>
   <title>ViteSite</title>
 </head>
 
@@ -32,11 +28,27 @@
   </header>
   <main class="jumbotron">
     <h1 class="h2 text-center">Security in Websites</h1>
-    <p>An online presence gives your business valuable visibility, but creating a secure website instills consumer confidence in shopping 
-      with your business. While launching a company website can generate brand awareness and more convenient interactions with customers, 
-      it’s imperative to prioritize security when building your site — otherwise, your website could repel customers.</p>
+    <p>
+      The Internet is a dangerous place! With great regularity, we hear about websites becoming unavailable due to denial of service 
+      attacks, or displaying modified (and often damaging) information on their homepages. In other high-profile cases, millions of 
+      passwords, email addresses, and credit card details have been leaked into the public domain, exposing website users to both personal 
+      embarrassment and financial risk. The purpose of website security is to prevent these (or any) sorts of attacks. The more formal 
+      definition of website security is the act/practice of protecting websites from unauthorized access, use, modification, destruction, 
+      or disruption.
+    </p>
+    <h2 class="h3 text-center">The Open Web Application Security Project aka OWASP</h2>
+    <p>
+      The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad 
+      consensus about the most critical security risks to web applications.
+    </p>
+    <p>
+      Companies should adopt this document and start the process of ensuring that their web applications minimize these risks. Using the 
+      OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into 
+      one that produces more secure code.
+    </p>
+    <a href="https://owasp.org/www-project-top-ten/">Read the full OWASP document to know about all the security threats to a website.</a>
     <div class="row mx-auto">
-      <h2 class="col-sm-12 text-center mt-4 p-4">Few Common Tips</h2>
+      <h2 class="col-sm-12 h3 text-center mt-4 p-4">Few Common Tips to make secure websites</h2>
       <div class="col-4">
         <div class="list-group" id="list-tab" role="tablist">
           <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
@@ -80,6 +92,7 @@
     </div>
   </main>
   <section class="container">
+    <h2 class="text-center">Example of a secure form</h2>
     <form name="myform" action="" class="row mx-auto my-4" method="POST">
       <div class="container col-12">
         <div class="form-group col-sm-4 mx-auto">
@@ -166,12 +179,17 @@
       <div class="navbar-nav d-flex flex-row justify-content-center" id="links">
         <a class="nav-item nav-link active p-4 text-light" id="navbar-link">Home <span
             class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link p-4 text-light" id="navbar-link">About</a>
-        <a class="nav-item nav-link p-4 text-light" id="navbar-link">Works</a>
-        <a class="nav-item nav-link p-4 text-light" id="navbar-link">Contact</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">About Accessibility</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">WCAG</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">Mozzilla References</a>
+        <a class="nav-item nav-link p-4 text-light" id="navbar-link">Web security</a>
       </div>
     </div>
   </footer>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script type="module" src="/main.v1.js"></script>
   <script type="module" src="/main.v1.js"></script>
 </body>
 </html>
