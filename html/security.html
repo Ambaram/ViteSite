@@ -1,122 +1,239 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <title>ViteSite</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <title>ViteSite</title>
-</head>
-
-<body>
-  <header>
-    <nav class="navbar bg-dark" id="nav">
-      <a class="navbar-brand" href="https://amvitesite.netlify.app/">
-        <img src="../images/S&A.jpeg" class="w-25 mt-0 mx-4 rounded-circle" alt="logo">
-      </a>
-      <div class="navbar navbar-sm-collapse" id="fixnav">
-        <div class="navbar-nav d-flex flex-row" id="links">
-          <a class="nav-item nav-link active p-4 text-light" id="navbar-link" href="https://amvitesite.netlify.app/">Home <span
-              class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link p-4 text-light" id="navbar-link">About</a>
-          <a class="nav-item nav-link p-4 text-light" id="navbar-link">Works</a>
-          <a class="nav-item nav-link p-4 text-light" id="navbar-link">Contact</a>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <main class="jumbotron">
-    <h1 class="h2 text-center">Security in Websites</h1>
-    <p>
-      The Internet is a dangerous place! With great regularity, we hear about websites becoming unavailable due to denial of service 
-      attacks, or displaying modified (and often damaging) information on their homepages. In other high-profile cases, millions of 
-      passwords, email addresses, and credit card details have been leaked into the public domain, exposing website users to both personal 
-      embarrassment and financial risk. The purpose of website security is to prevent these (or any) sorts of attacks. The more formal 
-      definition of website security is the act/practice of protecting websites from unauthorized access, use, modification, destruction, 
-      or disruption.
-    </p>
-    <h2 class="h3 text-center">The Open Web Application Security Project aka OWASP</h2>
-    <p>
-      The OWASP Top 10 is a standard awareness document for developers and web application security. It represents a broad 
-      consensus about the most critical security risks to web applications.
-    </p>
-    <p>
-      Companies should adopt this document and start the process of ensuring that their web applications minimize these risks. Using the 
-      OWASP Top 10 is perhaps the most effective first step towards changing the software development culture within your organization into 
-      one that produces more secure code.
-    </p>
-    <a href="https://owasp.org/www-project-top-ten/">Read the full OWASP document to know about all the security threats to a website.</a>
-    <div class="row mx-auto">
-      <h2 class="col-sm-12 h3 text-center mt-4 p-4">Few Common Tips to make secure websites</h2>
-      <div class="col-4">
-        <div class="list-group" id="list-tab" role="tablist">
-          <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list"
-            href="#list-home" role="tab" aria-controls="home">Avoid Injection Flaws</a>
-          <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list"
-            href="#list-profile" role="tab" aria-controls="profile">Broken Authentication</a>
-          <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list"
-            href="#list-messages" role="tab" aria-controls="messages">Broken Access Control</a>
-          <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list"
-            href="#list-settings" role="tab" aria-controls="settings">Sensitive Data Exposure</a>
-        </div>
-      </div>
-      <div class="col-8">
-        <div class="tab-content" id="nav-tabContent">
-          <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
-            Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur when untrusted data is sent to an interpreter as part 
-            of a command or query. The attacker’s hostile data can trick the interpreter into executing unintended commands or accessing 
-            data without proper authorization.
-          </div>
-          <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
-            Application functions related to authentication and session management are often implemented incorrectly, 
-            allowing attackers to compromise passwords, keys, or session tokens, or to exploit other implementation flaws to assume other 
-            users’ identities temporarily or permanently.
-          </div>
-          <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
-            Restrictions on what authenticated users are allowed to do are often not properly enforced. Attackers can exploit these flaws to 
-            access unauthorized functionality and/or data, such as access other users’ accounts, view sensitive files, modify other users’ 
-            data, change access rights, etc.
-          </div>
-          <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
-            Many web applications and APIs do not properly protect sensitive data, such as financial, healthcare, and PII. Attackers may 
-            steal or modify such weakly protected data to conduct credit card fraud, identity theft, or other crimes. Sensitive data may be 
-            compromised without extra protection, such as encryption at rest or in transit, and requires special precautions when exchanged 
-            with the browser.
+  <body>
+    <header>
+      <nav class="navbar bg-dark" id="nav">
+        <a class="navbar-brand" href="https://amvitesite.netlify.app/">
+          <img
+            src="../images/S&A.jpeg"
+            class="w-25 mt-0 mx-4 rounded-circle"
+            alt="logo"
+          />
+        </a>
+        <div class="navbar navbar-sm-collapse" id="fixnav">
+          <div class="navbar-nav d-flex flex-row" id="links">
+            <a
+              class="nav-item nav-link p-4 text-light"
+              id="navbar-link"
+              href="ttps://amvitesite.netlify.app/"
+              >About</a
+            >
+            <a
+              class="nav-item nav-link p-4 text-light"
+              id="navbar-link"
+              href="security.html"
+              >Security</a
+            >
+            <a
+              class="nav-item nav-link p-4 text-light"
+              id="navbar-link"
+              href="accessibility.html"
+              >Accessibility</a
+            >
+            <a
+              class="nav-item nav-link p-4 text-light"
+              id="navbar-link"
+              href="../index.html/#main"
+              >Build Tools</a
+            >
           </div>
         </div>
-      </div>
-      <div class="col-sm-12">
-        <a class="float-right" href="https://owasp.org/www-project-top-ten/">Source : The Open Web Application Security Project aka OWASP</a>
-      </div>
-    </div>
-  </main>
-  <section class="container">
-    <h2 class="text-center">Example of a secure form</h2>
-    <form name="myform" action="" class="row mx-auto my-4" method="POST">
-      <div class="container col-12">
-        <div class="form-group col-sm-4 mx-auto">
-          <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </nav>
+    </header>
+    <main class="jumbotron">
+      <h1 class="h2 text-center">Security in Websites</h1>
+      <p>
+        The Internet is a dangerous place! With great regularity, we hear about
+        websites becoming unavailable due to denial of service attacks, or
+        displaying modified (and often damaging) information on their homepages.
+        In other high-profile cases, millions of passwords, email addresses, and
+        credit card details have been leaked into the public domain, exposing
+        website users to both personal embarrassment and financial risk. The
+        purpose of website security is to prevent these (or any) sorts of
+        attacks. The more formal definition of website security is the
+        act/practice of protecting websites from unauthorized access, use,
+        modification, destruction, or disruption.
+      </p>
+      <h2 class="h3 text-center">
+        The Open Web Application Security Project aka OWASP
+      </h2>
+      <p>
+        The OWASP Top 10 is a standard awareness document for developers and web
+        application security. It represents a broad consensus about the most
+        critical security risks to web applications.
+      </p>
+      <p>
+        Companies should adopt this document and start the process of ensuring
+        that their web applications minimize these risks. Using the OWASP Top 10
+        is perhaps the most effective first step towards changing the software
+        development culture within your organization into one that produces more
+        secure code.
+      </p>
+      <a href="https://owasp.org/www-project-top-ten/"
+        >Read the full OWASP document to know about all the security threats to
+        a website.</a
+      >
+      <div class="row mx-auto">
+        <h2 class="col-sm-12 h3 text-center mt-4 p-4">
+          Few Common Tips to make secure websites
+        </h2>
+        <div class="col-4">
+          <div class="list-group" id="list-tab" role="tablist">
+            <a
+              class="list-group-item list-group-item-action active"
+              id="list-home-list"
+              data-toggle="list"
+              href="#list-home"
+              role="tab"
+              aria-controls="home"
+              >Avoid Injection Flaws</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-profile-list"
+              data-toggle="list"
+              href="#list-profile"
+              role="tab"
+              aria-controls="profile"
+              >Broken Authentication</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-messages-list"
+              data-toggle="list"
+              href="#list-messages"
+              role="tab"
+              aria-controls="messages"
+              >Broken Access Control</a
+            >
+            <a
+              class="list-group-item list-group-item-action"
+              id="list-settings-list"
+              data-toggle="list"
+              href="#list-settings"
+              role="tab"
+              aria-controls="settings"
+              >Sensitive Data Exposure</a
+            >
+          </div>
         </div>
-        <div class="form-group col-sm-4 mx-auto">
-          <label for="exampleInputPassword1">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          <h6>Password Policy</h6>
-          <ul>
-            <li>One Uppercase letter</li>
-            <li>One Number</li>
-            <li> 8 characters long</li>
-          </ul>
+        <div class="col-8">
+          <div class="tab-content" id="nav-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="list-home"
+              role="tabpanel"
+              aria-labelledby="list-home-list"
+            >
+              Injection flaws, such as SQL, NoSQL, OS, and LDAP injection, occur
+              when untrusted data is sent to an interpreter as part of a command
+              or query. The attacker’s hostile data can trick the interpreter
+              into executing unintended commands or accessing data without
+              proper authorization.
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-profile"
+              role="tabpanel"
+              aria-labelledby="list-profile-list"
+            >
+              Application functions related to authentication and session
+              management are often implemented incorrectly, allowing attackers
+              to compromise passwords, keys, or session tokens, or to exploit
+              other implementation flaws to assume other users’ identities
+              temporarily or permanently.
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-messages"
+              role="tabpanel"
+              aria-labelledby="list-messages-list"
+            >
+              Restrictions on what authenticated users are allowed to do are
+              often not properly enforced. Attackers can exploit these flaws to
+              access unauthorized functionality and/or data, such as access
+              other users’ accounts, view sensitive files, modify other users’
+              data, change access rights, etc.
+            </div>
+            <div
+              class="tab-pane fade"
+              id="list-settings"
+              role="tabpanel"
+              aria-labelledby="list-settings-list"
+            >
+              Many web applications and APIs do not properly protect sensitive
+              data, such as financial, healthcare, and PII. Attackers may steal
+              or modify such weakly protected data to conduct credit card fraud,
+              identity theft, or other crimes. Sensitive data may be compromised
+              without extra protection, such as encryption at rest or in
+              transit, and requires special precautions when exchanged with the
+              browser.
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12">
+          <a class="float-right" href="https://owasp.org/www-project-top-ten/"
+            >Source : The Open Web Application Security Project aka OWASP</a
+          >
         </div>
       </div>
-      <div class="col-sm-12 text-center">
-        <button type="submit" id="submit" class="btn btn-primary col-sm-2 text-center">Submit</button>
-      </div>
-    </form>
-  </section>
-  <section class="container mx-auto my-4 p-4">
+    </main>
+    <section class="container">
+      <h2 class="text-center">Example of a secure form</h2>
+      <form name="myform" action="" class="row mx-auto my-4" method="POST">
+        <div class="container col-12">
+          <div class="form-group col-sm-4 mx-auto">
+            <label for="exampleInputEmail1">Email address</label>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Enter email"
+            />
+            <small id="emailHelp" class="form-text text-muted"
+              >We'll never share your email with anyone else.</small
+            >
+          </div>
+          <div class="form-group col-sm-4 mx-auto">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Password"
+            />
+            <h6>Password Policy</h6>
+            <ul>
+              <li>One Uppercase letter</li>
+              <li>One Number</li>
+              <li>8 characters long</li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-sm-12 text-center">
+          <button
+            type="submit"
+            id="submit"
+            class="btn btn-primary col-sm-2 text-center"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+    </section>
+    <section class="container mx-auto my-4 p-4">
       <table class="table table-striped table-bordered">
         <thead>
           <tr class="text-center bg-dark text-light">
@@ -127,33 +244,52 @@
         <tbody>
           <tr>
             <td>HTTP Header X-Frame-Options = "DENY"</td>
-            <td>Tells the browser whether you want to allow your site to be framed or not.This page does not allow frames.</td>
+            <td>
+              Tells the browser whether you want to allow your site to be framed
+              or not.This page does not allow frames.
+            </td>
           </tr>
           <tr>
             <td>X-XSS-Protection = "1; mode=block"</td>
-            <td>Sets the configuration for the XSS Auditor built into older browsers. No  XSS for this page.</td>
+            <td>
+              Sets the configuration for the XSS Auditor built into older
+              browsers. No XSS for this page.
+            </td>
           </tr>
           <tr>
             <td>Content-Security-Policy = "script-src 'self'"</td>
-            <td>By whitelisting sources of approved content, you can prevent the browser from loading malicious assets. 
-              Assets set on thtis page are approved.</td>
+            <td>
+              By whitelisting sources of approved content, you can prevent the
+              browser from loading malicious assets. Assets set on thtis page
+              are approved.
+            </td>
           </tr>
           <tr>
             <td>X-Content-Type-Options = "nosniff"</td>
-            <td>Stops a browser from trying to MIME-sniff the content type and forces it to stick with the declared content-type. Logo is clearly defined to be MIME.</td>
+            <td>
+              Stops a browser from trying to MIME-sniff the content type and
+              forces it to stick with the declared content-type. Logo is clearly
+              defined to be MIME.
+            </td>
           </tr>
           <tr>
             <td>Referrer-Policy = "no-referrer"</td>
-            <td>Header that allows a site to control how much information the browser includes with navigations away from a document and 
-              should be set by all sites.</td>
+            <td>
+              Header that allows a site to control how much information the
+              browser includes with navigations away from a document and should
+              be set by all sites.
+            </td>
           </tr>
           <tr>
-            <td>Permissions-Policy =  "geolocation=*"</td>
-            <td>A header that allows a site to control which features and APIs can be used in the browser.</td>
+            <td>Permissions-Policy = "geolocation=*"</td>
+            <td>
+              A header that allows a site to control which features and APIs can
+              be used in the browser.
+            </td>
           </tr>
           <tr class="bg-dark text-light text-center">
-          <th>Other Security Principles</th>
-          <th>Description</th>
+            <th>Other Security Principles</th>
+            <th>Description</th>
           </tr>
           <tr>
             <td>Use of POST Method for form data</td>
@@ -165,29 +301,54 @@
           </tr>
           <tr>
             <td>Clear password policy</td>
-            <td>Avoid easy to guess data and providing more protection to sensitive data</td>
+            <td>
+              Avoid easy to guess data and providing more protection to
+              sensitive data
+            </td>
           </tr>
           <tr>
             <td>Security Report summary</td>
-            <td>All the pages associated with the website are A+ as per securityheader.com</td>
+            <td>
+              All the pages associated with the website are A+ as per
+              securityheader.com
+            </td>
           </tr>
         </tbody>
       </table>
-  </section>
-  <footer class="container-fluid bg-dark">
-    <div class="navbar navbar-sm-collapse justify-content-center" id="fixnav">
-      <div class="navbar-nav d-flex flex-row " id="links">
-        <a class="nav-item nav-link active p-4 text-light" id="navbar-link" href="#buildtool">Home <span
-            class="sr-only">(current)</span></a>
-        <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="../html/accessibility.html">Accessible Websites</a>
-        <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="../html/security.html">Secure Websites</a>
-        <a class="nav-item nav-link p-4 text-light" id="navbar-link" href="../index.html">Build Tools</a>
+    </section>
+    <footer class="container-fluid bg-dark">
+      <div class="navbar navbar-sm-collapse justify-content-center" id="fixnav">
+        <div class="navbar-nav d-flex flex-row" id="links">
+          <a
+            class="nav-item nav-link active p-4 text-light"
+            id="navbar-link"
+            href="#buildtool"
+            >Home <span class="sr-only">(current)</span></a
+          >
+          <a
+            class="nav-item nav-link p-4 text-light"
+            id="navbar-link"
+            href="../html/accessibility.html"
+            >Accessible Websites</a
+          >
+          <a
+            class="nav-item nav-link p-4 text-light"
+            id="navbar-link"
+            href="../html/security.html"
+            >Secure Websites</a
+          >
+          <a
+            class="nav-item nav-link p-4 text-light"
+            id="navbar-link"
+            href="../index.html"
+            >Build Tools</a
+          >
+        </div>
       </div>
-    </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script type="module" src="../js/main.v1.js"></script>
-</body>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="module" src="../js/main.v1.js"></script>
+  </body>
 </html>
