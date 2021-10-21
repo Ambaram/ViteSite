@@ -11,5 +11,5 @@
 
   [[redirects]]
   from = "/*"
-  to = "/security"
+  to = "/html"
   status = 302
